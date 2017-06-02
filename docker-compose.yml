@@ -1,8 +1,9 @@
 # docker run -ti --rm --net="host" --name youtube-dl -v /usr/share/nginx/html/dl:/dl youtube-dl-server
 version: '2'
 services:
-  tor:
-    image: youtube-dl-server
+  ytdl:
+    build: https://github.com/fluential/youtube-dl-server
+    #image: youtube-dl-server
     network_mode: "host"
     ports:
       - "8081"
