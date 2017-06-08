@@ -48,6 +48,6 @@ dl_thread.start()
 
 print("Started download thread")
 
-app.run(host='0.0.0.0', port=8081, debug=True)
+app.run(host='0.0.0.0', port=8282, debug=True)
 done = True
 dl_thread.join()
