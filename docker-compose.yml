@@ -2,11 +2,11 @@
 version: '2'
 services:
   ytdl:
-    build: https://github.com/fluential/youtube-dl-server
+    build: https://github.com/fluential/youtube-dl-server.git
     #image: youtube-dl-server
     network_mode: "host"
     ports:
-      - "8081"
+      - "8282:8282"
     volumes:
      - /usr/share/nginx/html/dl:/dl
     restart: always
